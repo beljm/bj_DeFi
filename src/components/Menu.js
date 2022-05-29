@@ -1,24 +1,34 @@
 import './Menu.css';
 import React, { Component } from 'react';
 import logoURL from '../images/logo.png';
+import { Link } from "react-router-dom";
 
 class Menu extends Component {
   render() {
     return (        
       <div >
-        <img className='logo' src={logoURL}></img>
-
+        <button>          
+          <Link to='/'><img className='logo' src={logoURL}></img></Link>
+        </button>
         <div>
-          <button>Swap</button>
+          <button>
+            <Link to='/swap'>Swap</Link>
+          </button>
         </div>
         <div>
-          <button>Staking</button>
+          <button>
+            <Link to='/staking'>Staking</Link>
+          </button>          
         </div>
         <div>
-          <button>Staking</button>
+          <button>
+            <Link to='/nft'>NFT</Link>
+          </button> 
         </div>
         <div>
-          <button>Other</button>
+          <button>
+            <Link to='/other'>Other</Link>
+          </button> 
         </div>
       </div>
     );
