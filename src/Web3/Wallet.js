@@ -27,10 +27,10 @@ function Wallet(){
       <div>
         <button type="button" onClick={handleConnect}>{active ? account : 'Connect Wallet'}</button>
       </div>
-      <div>
+      {/* <div>
         <p>account: {account}</p>
         <p>chainId: {chainId}</p>
-      </div>
+      </div> */}
     </div>
   )
 }
