@@ -1,6 +1,6 @@
 import React from "react";
 
-function Graph(){
+function StockChart(){
 
     return(
         <div>
@@ -9,4 +9,4 @@ function Graph(){
     )
 }
 
-export default Graph;
+export default StockChart;

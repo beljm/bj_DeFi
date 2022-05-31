@@ -1,5 +1,5 @@
 import React from "react";
-import Graph from "../components/swap/Graph";
+import StockChart from "../components/swap/StockChart";
 import Tokenswap from "../components/swap/Tokenswap";
 import Wallet from "../Web3/Wallet";
 
@@ -8,7 +8,7 @@ function Swap(){
   return(
     <div>
       <div>
-        <Graph/>        
+        <StockChart/>        
       </div>
       <div>
         <Tokenswap/>        
