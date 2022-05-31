@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 let testData = [
   {
@@ -27,7 +27,14 @@ function Price(){
     setTimeout(()=>{
         setTokens(temp)
     }, 10000)
-  }  
+  }
+
+  // 코인 가격 변동하는척
+  // useEffect(()=>{
+  //   console.log('ddd')
+  //   setData()
+  // },[tokens])
+  
   
   return (        
     <div >
