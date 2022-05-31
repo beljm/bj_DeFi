@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 
 let testData = [
   {
@@ -16,46 +16,35 @@ let testData = [
 ]
 
 
-class Main extends Component {
-  // const [tokens, setTokens];
-  // constructor(){
-  //   [tokens, setTokens] = useState(testData);
+function Price(){
+  const [tokens, setTokens] = useState(testData);
 
-  //   setData()
-    
-  // }
-
-  // setData = () =>{
-  //   let temp = testData.slice(0)
-  //   for(let i of temp){
-  //       i.price++;
-  //   }
-  //   setTimeout(()=>{
-  //       setTokens(temp)
-  //   }, 10000)
-  // }
-
-  render() {
-    return (        
-      <div >
-        <div className='tokenInfo'>
-          {/* {tokens[0].symbol} */}
-          {/* {tokens[0].price} */}
-          BTC 3600
-        </div>
-        <div className='tokenInfo'>
-          {/* {tokens[1].symbol}
-          {tokens[1].price} */}
-          ETH 360
-        </div>
-        <div className='tokenInfo'>
-          {/* {tokens[2].symbol}
-          {tokens[2].price} */}
-          BJ 36
-        </div>
+  const setData = () =>{
+    let temp = testData.slice(0)
+    for(let i of temp){
+        i.price++;
+    }
+    setTimeout(()=>{
+        setTokens(temp)
+    }, 10000)
+  }  
+  
+  return (        
+    <div >
+      <div className='tokenInfo'>
+        {tokens[0].symbol}        
+        {tokens[0].price}        
       </div>
-    );
-  }
+      <div className='tokenInfo'>
+        {tokens[1].symbol}
+        {tokens[1].price}
+      </div>
+      <div className='tokenInfo'>
+        {tokens[2].symbol}
+        {tokens[2].price}
+      </div>
+    </div>
+  );
 }
 
-export default Main;
+export default Price;
