@@ -6,10 +6,10 @@ import MenuBar from './pages/MenuBar';
 import Main from './pages/Main';
 import Swap from './pages/Swap';
 
-function App(){
+function App(props){
   return (
     <BrowserRouter>
-      <div >
+      <div >        
         <div>          
           <MenuBar></MenuBar>          
         </div>

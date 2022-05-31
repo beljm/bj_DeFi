@@ -1,4 +1,5 @@
 import React from 'react';
+import Wallet from '../Web3/Wallet';
 
 function MenuOption() {
   return (        
@@ -13,7 +14,7 @@ function MenuOption() {
         <button>option</button>
       </div>
       <div>
-        <button>connectwallet</button>
+        <Wallet/>
       </div>
     </div>
   );
