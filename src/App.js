@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import MenuBar from './pages/MenuBar';
 import Main from './pages/Main';
+import Swap from './pages/Swap';
 
 function App(){
   return (
@@ -13,8 +14,8 @@ function App(){
           <MenuBar></MenuBar>          
         </div>
         <Routes>
-          <Route path='/' element={<Main></Main>}/>
-          <Route path='/swap' element={<div>swap</div>}/>
+          <Route path='/' element={<Main/>}/>
+          <Route path='/swap' element={<Swap/>}/>
           <Route path='/staking' element={<div>staking</div>}/>
           <Route path='/nft' element={<div>nft</div>}/>
           <Route path='/other' element={<div>other</div>}/>
