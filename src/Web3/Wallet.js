@@ -1,11 +1,11 @@
+import "./Wallet.css";
 import React from "react";
 import { useWeb3React } from "@web3-react/core";
 import { injected } from "./connectors";
 
-function Wallet(){
-  
-  const {chainId, account, active, activate, deactivate} = useWeb3React();
 
+function Wallet(){
+  const {chainId, account, active, activate, deactivate} = useWeb3React();
 
   const handleConnect = () => {
     if(active){
@@ -25,12 +25,8 @@ function Wallet(){
   return(
     <div>
       <div>
-        <button type="button" onClick={handleConnect}>{active ? account : 'Connect Wallet'}</button>
-      </div>
-      {/* <div>
-        <p>account: {account}</p>
-        <p>chainId: {chainId}</p>
-      </div> */}
+        <button classname='connectBtn' onClick={handleConnect}>{active ? account : 'Connect Wallet'}</button>
+      </div>      
     </div>
   )
 }

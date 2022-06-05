@@ -1,0 +1,28 @@
+.oContainer{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.oItem{
+    
+}
+
+.oBtn{
+    width: auto;
+    height: 50px;
+    margin: 2px;
+     
+    background-color: transparent;
+    border: 0;
+    border-radius: 14px;
+     
+    color: rgb(194, 139, 194) ;
+    font-weight: 600;
+    font-size: 1.8ch;
+    text-decoration: none;
+}
+
+.walletBtn{
+    margin: 15px;
+}

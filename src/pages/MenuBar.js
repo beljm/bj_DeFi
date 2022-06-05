@@ -1,14 +1,16 @@
+import "./MenuBar.css";
 import React from 'react';
 import Menu from '../components/Menu';
 import MenuOption from '../components/MenuOption';
 
+
 function MenuBar() {
   return (        
-    <div >
-      <div>
+    <div className='container'>
+      <div className="item">
         <Menu></Menu>
       </div>
-      <div>
+      <div className="item">
         <MenuOption></MenuOption>
       </div>
     </div>

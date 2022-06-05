@@ -1,5 +1,41 @@
 .logo{
-   width: 100px;
-   height: 50px;
-   object-fit: cover;
+   width: 180px;
+   height: 38px;
+   margin: 5px;
+   margin-left: 0;
 }
+
+.logoBtn{
+   background-color: transparent;
+   border: 0;
+}
+
+.listBtn{
+   width: auto;
+   height: 50px;
+   margin: 2px;
+
+   background-color: transparent;
+   border: 0;
+   border-radius: 14px;
+
+   color: rgb(194, 139, 194) ;
+   font-weight: 900;
+   font-size: 1.8ch;
+   text-decoration: none;
+}
+
+.listBtn:hover{
+   background-color: #473939;
+}
+
+.lContainer{
+   display: flex;
+   justify-content: start;
+   align-items: center;
+}
+
+.lItem{
+   /* width: 60px; */
+}
+

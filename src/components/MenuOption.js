@@ -1,19 +1,21 @@
+import "./MenuOption.css";
 import React from 'react';
 import Wallet from '../Web3/Wallet';
 
+
 function MenuOption() {
   return (        
-    <div >
-      <div>
-        <button>token</button>
+    <div className='oContainer' >
+      <div className="oItem">
+        <button className="oBtn">token</button>
       </div>
-      <div>
-        <button>languege</button>
+      <div className="oItem">
+        <button className="oBtn">languege</button>
       </div>
-      <div>
-        <button>option</button>
+      <div className="oItem">
+        <button className="oBtn">option</button>
       </div>
-      <div>
+      <div className="oItem walletBtn">
         <Wallet/>
       </div>
     </div>

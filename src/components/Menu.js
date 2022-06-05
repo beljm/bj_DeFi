@@ -1,31 +1,33 @@
 import './Menu.css';
 import React from 'react';
-import logoURL from '../images/logo.png';
+import logoURL from '../images/panLogo.png';
 import { Link } from "react-router-dom";
 
 function Menu(){
   return (        
-    <div >
-      <button>          
-        <Link to='/'><img className='logo' src={logoURL}></img></Link>
-      </button>
+    <div className='lContainer'>
       <div>
-        <button>
+        <button className='logoBtn'>          
+          <Link to='/'><img className='logo' src={logoURL}></img></Link>
+        </button>
+      </div>      
+      <div className='lItem'>
+        <button className='listBtn'>
           <Link to='/swap'>Swap</Link>
         </button>
       </div>
-      <div>
-        <button>
+      <div className='lItem'>
+        <button className='listBtn'>
           <Link to='/staking'>Staking</Link>
         </button>          
       </div>
-      <div>
-        <button>
+      <div className='lItem'>
+        <button className='listBtn'>
           <Link to='/nft'>NFT</Link>
         </button> 
       </div>
-      <div>
-        <button>
+      <div className='lItem'>
+        <button className='listBtn'>
           <Link to='/other'>Other</Link>
         </button> 
       </div>

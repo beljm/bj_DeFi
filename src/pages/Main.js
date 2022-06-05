@@ -1,3 +1,4 @@
+import "./Main.css";
 import React from 'react';
 import Advertising from '../components/main/Advertising';
 import Introduce from '../components/main/Introduce';
@@ -6,12 +7,12 @@ import Footer from '../components/main/Footer';
 
 function Main() {
   return (        
-    <div >
+    <div className='main'>
       <div>
         <Advertising />
       </div>
       <div>
-        <Introduce/>
+          <Introduce/>
       </div>
       <div>
         <Price/>

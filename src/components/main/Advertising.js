@@ -4,6 +4,7 @@ import SwiperCore, { Navigation, Pagination, Autoplay} from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import './Advertising.css';
 
 import ad1URL from '../../images/ad1.png';
 import ad2URL from '../../images/ad2.png';
