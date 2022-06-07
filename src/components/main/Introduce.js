@@ -1,7 +1,7 @@
 import React from 'react';
 import './introduce.css';
 import img from '../../images/image.webp';
-
+import Wallet from '../../Web3/Wallet'
 function Introduce(){
   return (      
     <div className='intro'>
@@ -14,7 +14,11 @@ function Introduce(){
         </div>
         <div className='myTxt'>
           This page is practice Project made by jimin Lee
-        </div>              
+        </div>
+        <div className='mainWallet'>
+        <Wallet></Wallet>
+        </div>
+        
       </div>
       <div>
         <img className='introImg' src={img}></img>

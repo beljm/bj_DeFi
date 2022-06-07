@@ -9,16 +9,19 @@ function Main() {
   return (        
     <div className='main'>
       <div>
-        <Advertising />
-      </div>
-      <div>
-          <Introduce/>
-      </div>
-      <div>
-        <Price/>
-      </div>
-      <div>
-        <Footer/>
+          <Advertising />
+        </div>
+      <div className="mainContent">
+        
+        <div>
+            <Introduce/>
+        </div>
+        <div>
+          <Price/>
+        </div>
+        <div>
+          <Footer/>
+        </div>
       </div>
     </div>
   );

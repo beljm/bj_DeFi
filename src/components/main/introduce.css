@@ -11,9 +11,10 @@
 }
 
 .mainTxt{
-    color: rgb(161, 46, 161) ;
+    color: rgb(137, 20, 201) ;
     font-weight: 1200;
-    font-size: 10ch;
+    font-size: 7ch;
+    margin-bottom: 10px;
 }
 
 .contentTxt{
@@ -21,6 +22,7 @@
     color: white;
     font-weight: 900;
     font-size: 2ch;
+    margin-bottom: 5px;
 }
 
 .myTxt{
@@ -29,10 +31,12 @@
     font-size: 1ch;
 }
 
-
-
 .introImg{
-    width: 500px;
+    width: 600px;
     height: 600px;
-    margin-right: 300px;
+    margin-right: 200px;
+}
+
+.mainWallet{
+    margin-top: 20px;
 }
