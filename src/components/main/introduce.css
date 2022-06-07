@@ -1,0 +1,38 @@
+.intro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+}
+
+.introTxt{
+    margin-left: 300px;
+}
+
+.mainTxt{
+    color: rgb(161, 46, 161) ;
+    font-weight: 1200;
+    font-size: 10ch;
+}
+
+.contentTxt{
+    /* color: rgb(83, 19, 83) ; */
+    color: white;
+    font-weight: 900;
+    font-size: 2ch;
+}
+
+.myTxt{
+    color: white;
+    font-weight: 900;
+    font-size: 1ch;
+}
+
+
+
+.introImg{
+    width: 500px;
+    height: 600px;
+    margin-right: 300px;
+}
