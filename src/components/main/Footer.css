@@ -1,0 +1,44 @@
+.footerMain{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+
+    background-color: #232227;
+
+    color: rgb(174, 98, 174);
+    font-weight: 600;
+    font-size: 1.6ch;
+
+    margin-bottom: 5px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+
+.footerBtn > button{
+    color: white;
+    text-align: left;
+    font-weight: 400;
+
+    margin-top: 10px;
+    margin-left: 0;
+    padding-left: 0;
+
+    border: 0px;
+    background-color: transparent;
+}
+
+.aboutButton{
+    display: flex;
+    flex-direction: column;
+}
+
+.helpButton{
+    display: flex;
+    flex-direction: column;
+}
+
+.developersButton{
+    display: flex;
+    flex-direction: column;
+}

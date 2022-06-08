@@ -8,21 +8,20 @@ import Footer from '../components/main/Footer';
 function Main() {
   return (        
     <div className='main'>
-      <div>
-          <Advertising />
-        </div>
-      <div className="mainContent">
-        
+      <div className="mainBanner">
+        <Advertising />
+      </div>
+      <div className="mainContent">        
         <div>
             <Introduce/>
         </div>
         <div>
           <Price/>
-        </div>
-        <div>
+        </div>        
+      </div>
+      <div className="footer">
           <Footer/>
         </div>
-      </div>
     </div>
   );
 }
