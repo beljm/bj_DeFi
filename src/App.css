@@ -1,0 +1,15 @@
+.app{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.page{
+    /* display: flex; */
+    /* height: 100vh; */
+}
+
+.footer{
+    background-color: black;
+    
+}
