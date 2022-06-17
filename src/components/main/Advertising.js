@@ -1,21 +1,19 @@
 import React from 'react';
+import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Autoplay} from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import './Advertising.css';
-
-import ad1URL from '../../images/ad1.png';
-import ad2URL from '../../images/ad2.png';
-import ad3URL from '../../images/ad3.png';
-import ad4URL from '../../images/ad4.png';
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
+const BennarArea = styled.div`
+
+`
 function Advertising() {
   return (        
-    <div className='ad'>
+    <BennarArea>
       <Swiper
       className="banner"
       spaceBetween={50} // 슬라이드 간격
@@ -24,12 +22,12 @@ function Advertising() {
       //navigation
       pagination={{ clickable: true }}
     >
-      <SwiperSlide><img className='adc' src={ad1URL}></img></SwiperSlide>
-      <SwiperSlide><img className='adc' src={ad2URL}></img></SwiperSlide>
-      <SwiperSlide><img className='adc' src={ad3URL}></img></SwiperSlide>
-      <SwiperSlide><img className='adc' src={ad4URL}></img></SwiperSlide>
+      <SwiperSlide><img className='adc' src={'/ad1.png'}></img></SwiperSlide>
+      <SwiperSlide><img className='adc' src={'/ad2.png'}></img></SwiperSlide>
+      <SwiperSlide><img className='adc' src={'/ad3.png'}></img></SwiperSlide>
+      <SwiperSlide><img className='adc' src={'/ad4.png'}></img></SwiperSlide>
     </Swiper>
-    </div>
+    </BennarArea>
   );
 }
 

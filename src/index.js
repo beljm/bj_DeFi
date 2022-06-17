@@ -1,22 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import { Web3ReactProvider } from '@web3-react/core';
-import { Web3Provider } from '@ethersproject/providers';
+import { BrowserRouter } from "react-router-dom";
+import { createGlobalStyle } from "styled-components";
 
-
-const getLibrary = (provider) => new Web3Provider(provider, "any")
-// function getLibrary(provider) {
-//   const library = new Web3Provider(provider, "any");
-//   return library;
-// }
+const GlobalStyle = createGlobalStyle`
+  body{
+    margin: 0;
+  }
+`;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+root.render(  
   <React.StrictMode>
-    <Web3ReactProvider getLibrary={getLibrary}>
+    <GlobalStyle/>
+    <BrowserRouter>
       <App />
-    </Web3ReactProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );

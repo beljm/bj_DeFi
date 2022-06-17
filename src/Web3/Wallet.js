@@ -1,35 +1,40 @@
-import "./Wallet.css";
-import React from "react";
-import { useWeb3React } from "@web3-react/core";
-import { injected } from "./connectors";
+import styled from "styled-components";
+import { useState } from "react";
+import {connectWallet} from './walletUtil';
 
+const Button = styled.button`
+  width: 160px;
+  height: 35px;
+  background-color:darkturquoise;
+    
+  border-radius: 17px;
+  border-color: transparent;
+
+  color: white;
+  font-weight: 800;
+  font-size: 1.5ch;  
+`
+
+const WalletArea = styled.div`
+  margin: 15px; 
+`
 
 function Wallet(){
-  const {chainId, account, active, activate, deactivate} = useWeb3React();
-  const accountLen = 0;
 
-  const handleConnect = () => {     
-    if(active){
-      deactivate();
-      return;
-    }
-    
-    activate(injected, (error) => {
-      alert(error);
-      if('/No Ethereum provider was found on window.ethereum/' === error){
-        alert('extention을 설치해주세요');
-        window.open('https://metamask.io/download.html');    
-      }        
+  const [address, setAddress] = useState(false);
+
+  const walletconnect = async() =>{
+    connectWallet()
+    .then((res)=>{
+      console.log('addrss:', res);
+      setAddress(res);
     })
-    accountLen = account.slice(0);
   }
 
   return(
-    <div>
-      <div>
-        <button className='connectBtn' onClick={handleConnect}>{active ? account.slice(0,7)+"..."+account.slice(accountLen-5, accountLen-1) : 'Connect Wallet'}</button>
-      </div>      
-    </div>
+    <WalletArea>
+     <Button onClick={walletconnect}>{address ? address.slice(0,6)+'...'+address.slice(address.length-5, address.length) : "ConnectWallet"}</Button>
+    </WalletArea>
   )
 }
 

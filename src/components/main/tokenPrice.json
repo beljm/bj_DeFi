@@ -1,0 +1,14 @@
+[
+    {
+        "symbol":"BTC",
+        "price":3600
+    },
+    {
+        "symbol":"ETH",
+        "price":360
+    },
+    {
+        "symbol":"BJ",
+        "price":36
+    }
+]

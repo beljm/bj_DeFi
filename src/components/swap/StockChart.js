@@ -1,13 +1,10 @@
 import React from "react";
-import chartURL from "../../images/chart.png";
 
 function StockChart(){
 
-    return(
-        <div>
-            <img src={chartURL}></img>
-        </div>
-    )
+  return(
+    <img src={'Chart.png'}></img>
+  )
 }
 
 export default StockChart;
