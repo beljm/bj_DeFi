@@ -14,10 +14,13 @@ const Lbutton = styled.button`
   color: rgb(194, 139, 194) ;
   font-weight: 900;
   font-size: 1.8ch;
-  text-decoration: none;
 
   :hover{
     background-color: #473939;
+  }
+  >a{
+    text-decoration: none;
+    color: inherit;
   }
 `
 
@@ -36,6 +39,7 @@ const Div = styled.div`
   display: flex;
   justify-content: start;
   align-items: center;
+  
 `
 
 function Menu(){

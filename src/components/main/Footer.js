@@ -10,6 +10,7 @@ const FooterArea = styled.div`
   font-weight: 600;
   font-size: 1.6ch;
 
+  height: 200px;
   margin-bottom: 5px;
   padding-top: 30px;
   padding-bottom: 50px;

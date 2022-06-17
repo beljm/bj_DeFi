@@ -4,7 +4,8 @@ import Price from '../components/main/Price';
 import styled from "styled-components";
 
 const HomeArea = styled.div`
-  background-color: #2c1f3e;
+  padding-top: 100px;
+  background-color: #2c1f3e;  
 `
 
 const HomeBennarArea = styled.div`

@@ -1,6 +1,8 @@
 import React from 'react';
 import Wallet from '../../Web3/Wallet';
 import styled from "styled-components";
+import {RiGlobalLine} from 'react-icons/ri'
+import {BsFillGearFill} from 'react-icons/bs'
 
 const OptionArea = styled.div`
   display: flex;
@@ -9,17 +11,17 @@ const OptionArea = styled.div`
 `
 
 const OtionButton = styled.button`
-  width: auto;
-  height: 50px;
-  margin: 2px;
+  display: flex;
+  align-items:center;
+
+  margin: 5px;
      
   background-color: transparent;
   border: 0;
   border-radius: 14px;
      
   color: rgb(194, 139, 194) ;
-  font-weight: 600;
-  font-size: 1.8ch;
+  font-size: 2.5ch;
   text-decoration: none;
 `
 
@@ -27,8 +29,8 @@ function MenuOption() {
   return (        
     <OptionArea>
       {/* <button className="oBtn">token</button> */}
-      <OtionButton><i className="fa-solid fa-globe"></i></OtionButton>
-      <OtionButton><i className="fa-solid fa-gear"></i></OtionButton>
+      <OtionButton><RiGlobalLine/></OtionButton>
+      <OtionButton><BsFillGearFill/></OtionButton>
       <Wallet/>
     </OptionArea>
   );

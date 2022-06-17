@@ -12,16 +12,23 @@ const All = styled.div`
   flex-direction: column;
 
 `
-
-const Bottom = styled.div`
+const Top = styled.div`
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: black;
 `
+
 const Mid = styled.div`
 
 `
-const Top = styled.div`
+
+const Bottom = styled.div`
+  width: 100%;
+
   background-color: black;
 `
+
 
 function App(props){
   return (    
